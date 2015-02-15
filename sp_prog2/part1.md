@@ -1,3 +1,5 @@
+# Studienleistung Programmieren 2 Teil 1
+
 - **Was sind/wozu dienen "Namespaces" in Programmiersprachen?**
     ein Namespace ist eine logische Namenskonvention für das Abgrenzen von Klassen und sonstigen Typen, um die Gefahr von Kollisionen infolge mehrfach verwendeter und somit nicht mehr eindeutigen Bezeichner-Namen zu vermeiden. Die .NET-Klasse <i>MessageBox</i> wird zum Beispiel im Namespace <i>System.Windows.Forms</i> deklariert und implementiert.
 
@@ -78,9 +80,49 @@
     Das String object wir zu einem datentyp simuliert und somit handelt es sich um eine Wertezuweisung.
     Java:
     Es handelt sich um ein object und somit um eine Referenzzuweisung.
+    Um einen String zu kopieren muss ein neues String object erzeugt werden und der existirende String als parameter Übergeben werden.
 
 
 - **Sind die Opertoren == und != Wertevergleiche? Wenn dies für eine Sprache nicht gilt, wie ist dann das Vorgehen bei Vergleichen?**
-    
+    Ja die operatoren sind werte vergleichend. Da es sich bei Java Strings jedoch um Objekte handelt können die Strings nicht verglichen werden, da der Operator lediglich die speicher referenzen auf die jeweiligen String Objekte vergleicht.
 - **Sind die Operatoren <, <= und >, >= erlaubt? Wenn nicht, wie können entsprechende Vergleiche getätigt werden?**
+    Nein da diese Opertoren auf mathematische Größe vergleichen. Möchte man die länge eines Strings überprüfen so kann das mit der length() methode umgesetzt werde.
 - **Lesen Sie die Beschreibung der Klasse StringBuilder. Wann/Warum ist der Einsatz dieser Klasse anstelle der Stringverkettung zu empfehlen?**
+    Der einsatz ist immer dann sinvoll wenn sehr viele strings mit einanner verbunden werden sollen, das der StringBuilder um einiges schneller ist.
+
+- **Sind diese Grundsätze zur Parameterübergabe auch in C# gültig?**
+    Nein, parameter können in C# auch als referenzen übergeben werden. Sie werden standartmäßig jedoch als wert übergeben.
+- **In C# gibt es die Schlüsselwörter "ref" und "out". Erklären Sie anhand eines Experiments die Funktion der beiden Schlüsselwörter.**
+    Um einer Funktion eine variable als referenz zu übergeben, kann das schlüsselwort ref verwendet werden. Wird out verwendet, so muss die Variablen bei der übergabe nicht initialisiert sein.
+- **In Java gibt es die beiden obigen Schlüsselwörter nicht. Simulieren Sie das Verhalten von "ref", in dem Sie den zu übergebenden String das Objekt einer Wrapper-Klasse einbetten und das Wrapper Objekt an die Funktion "giveMeAString" übergeben. --> Erläutern Sie das Ergebnis.**
+    ```Java
+    class Wrapper{
+        private Object value;
+
+        public Wraper(value){
+            this.value= value;
+        }
+
+        public Object get(){
+            return value;
+        }
+
+        public void set(value){
+            this.value= value;
+        }
+    }
+
+    class Test{
+        public static void main(String[] args){
+            Object x = new Wrapper(null);
+            giveMeAString (x);
+            System.out.println (x.get());
+            [...]
+        }
+
+        static void giveMeAString (Object y){
+            y.set("This is a string");
+        }
+    }
+    ```
+    Das string object wird nun in einer Wrapper klasse gespeichert. Dieses Wrapper objekt wird dann in an die funktion übergeben und diese ändert denn inhalt. Da es sich anschließend jedoch immer noch um das gleiche Wrapper Objekt handelt kann der neue string immernoch zugegriffen werden.
