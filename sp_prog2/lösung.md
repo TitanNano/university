@@ -1,41 +1,54 @@
 # Studienleistung Programmieren 2 Teil 1
 
 - **Was sind/wozu dienen "Namespaces" in Programmiersprachen?**
+
     ein Namespace ist eine logische Namenskonvention für das Abgrenzen von Klassen und sonstigen Typen, um die Gefahr von Kollisionen infolge mehrfach verwendeter und somit nicht mehr eindeutigen Bezeichner-Namen zu vermeiden. Die .NET-Klasse <i>MessageBox</i> wird zum Beispiel im Namespace <i>System.Windows.Forms</i> deklariert und implementiert.
 
 - **Wie lautet die Syntax zu Namespaces in Java und C# (Beispiel)**
+
     Java:
-    ```Java
+    
+    ```
     package harding.compsci.graphics;     
     ```
+    
     C#:
-    ```C# 
+    
+    ``` 
     namespace Harding.Compsci.Graphics {
         …
     } 
     ```
 
 - **Wie unterscheiden sich Namespaces in C# und Java?**
+    
     Java Packages können nicht verschachtelt werden. Eine Datei kann nur ein Package enthalten.
 
 - **Wie werden Arrays in Java/C# erzeugt (Beispiel)? Sind diese Werte-, oder Referenztypen - was würde also bei einer Zuweisung eines Arrays, zu einem anderen passieren?**
+    
     Java:
-    ```Java
+    
+    ```
     int nums[] = {1, 2, 3};   or   int[] nums = {1, 2, 3};
     ```
+    
     C#:
-    ```C#
+    
+    ```
     int[] nums = {1, 2, 3};
     ```
+    
     Es sind Referenztypen. Bei der einer zuweisug würde den beide Variablen auf das gleiche Array zeigen.
 
 - **Geben Sie Beispiele für Wertetypen und Referenztypen in C# und Java.**
+    
     Wertetypen integer, boolean
 
     Referenztypen Arrays, Objekte
     
     
 - **Definieren Sie: Datenabstraktion und Information Hiding (Ziele des Einsatzes von Klassen), Eigenschaft/Attribut, Methode, statische Methode, statische Eigenschaft, statische Klasse, Wertetyp,Referenztyp**
+    
     Information Hiding: einige Informationen werden anderen Teilen des Programms vorenthalten, da es nicht relevant ist die Informationen zu teilen.
 
     Attribut: Eigenschaft eines Objekts.
@@ -53,6 +66,7 @@
     Referenztyp: Datentyp beidem bei einer Zuweisung nur eine Referenz auf den gleichen Speicher übergeben wird. Alle variablen zeigen immer auf die gleichen Daten.
 
 - **Was ist der Unterschied zwischen "ausgefransten" (unregelmäßigen) Arrays und rechteckigen (regelmäßigen Arrays)? Welche Arten werden in Java/C# unterstützt? Beispiel! Gibt es Vor-/Nachteile?**
+    
     Mehrdimensionale Arrays verfügen über mehr als eine Dimension.
     
     Ein unregelmäßiges Array ist lediglich ein Array von Arrays und wird als »unregelmäßig« (jagged) bezeichnet, da es nicht zwangsläufig rechteckig ist.
@@ -76,26 +90,36 @@
     
     
 - **Sind Stringzuweisungen Zeigerzuweisungen, oder Wertezuweisungen? D.h. wird der Wert des Strings kopiert, oder nicht? Wenn dies z.B. in einer Sprache keine Kopie erzeugt, wie wäre dann eine Kopie zu erzeugen?**
+    
     C#:
+    
     Das String object wir zu einem datentyp simuliert und somit handelt es sich um eine Wertezuweisung.
+    
     Java:
+    
     Es handelt sich um ein object und somit um eine Referenzzuweisung.
     Um einen String zu kopieren muss ein neues String object erzeugt werden und der existirende String als parameter Übergeben werden.
 
 
 - **Sind die Opertoren == und != Wertevergleiche? Wenn dies für eine Sprache nicht gilt, wie ist dann das Vorgehen bei Vergleichen?**
+    
     Ja die operatoren sind werte vergleichend. Da es sich bei Java Strings jedoch um Objekte handelt können die Strings nicht verglichen werden, da der Operator lediglich die speicher referenzen auf die jeweiligen String Objekte vergleicht.
 - **Sind die Operatoren <, <= und >, >= erlaubt? Wenn nicht, wie können entsprechende Vergleiche getätigt werden?**
+    
     Nein da diese Opertoren auf mathematische Größe vergleichen. Möchte man die länge eines Strings überprüfen so kann das mit der length() methode umgesetzt werde.
 - **Lesen Sie die Beschreibung der Klasse StringBuilder. Wann/Warum ist der Einsatz dieser Klasse anstelle der Stringverkettung zu empfehlen?**
+    
     Der einsatz ist immer dann sinvoll wenn sehr viele strings mit einanner verbunden werden sollen, das der StringBuilder um einiges schneller ist.
 
 - **Sind diese Grundsätze zur Parameterübergabe auch in C# gültig?**
+    
     Nein, parameter können in C# auch als referenzen übergeben werden. Sie werden standartmäßig jedoch als wert übergeben.
 - **In C# gibt es die Schlüsselwörter "ref" und "out". Erklären Sie anhand eines Experiments die Funktion der beiden Schlüsselwörter.**
+    
     Um einer Funktion eine variable als referenz zu übergeben, kann das schlüsselwort ref verwendet werden. Wird out verwendet, so muss die Variablen bei der übergabe nicht initialisiert sein.
 - **In Java gibt es die beiden obigen Schlüsselwörter nicht. Simulieren Sie das Verhalten von "ref", in dem Sie den zu übergebenden String das Objekt einer Wrapper-Klasse einbetten und das Wrapper Objekt an die Funktion "giveMeAString" übergeben. --> Erläutern Sie das Ergebnis.**
-    ```Java
+    
+    ```
     class Wrapper{
         private Object value;
 
