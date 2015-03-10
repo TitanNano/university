@@ -1,0 +1,22 @@
+graph streets{
+    J -- H [weight=4, label="4"];
+    J -- F [weight=3, label="3", color="red"];
+    J -- G [weight=2, label="2", color="red"];
+    J -- I [weight=4, label="4"];
+    I -- G [weight=3, label="3", color="red"];
+    I -- E [weight=2, label="2", color="red"];
+    H -- D [weight=2, label="2", color="red"];
+    H -- B [weight=4, label="4"];
+    H -- F [weight=3, label="3", color="red"];
+    G -- F [weight=4, label="4"];
+    G -- C [weight=4, label="4"];
+    G -- E [weight=4, label="4"];
+    F -- B [weight=2, label="2", color="red"];
+    F -- C [weight=3, label="3", color="red"];
+    E -- C [weight=5, label="5"];
+    E -- A [weight=4, label="4"];
+    D -- B [weight=3, label="3"];
+    C -- B [weight=3, label="3"];
+    C -- A [weight=3, label="3", color="red"];
+    B -- A [weight=5, label="5"];
+}

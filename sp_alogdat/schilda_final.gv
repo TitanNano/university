@@ -1,0 +1,11 @@
+graph streets{
+    J -- F [weight=3, label="3", color="red"];
+    J -- G [weight=2, label="2", color="red"];
+    I -- G [weight=3, label="3", color="red"];
+    I -- E [weight=2, label="2", color="red"];
+    H -- D [weight=2, label="2", color="red"];
+    H -- F [weight=3, label="3", color="red"];
+    F -- B [weight=2, label="2", color="red"];
+    F -- C [weight=3, label="3", color="red"];
+    C -- A [weight=3, label="3", color="red"];
+}

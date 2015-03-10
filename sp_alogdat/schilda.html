@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Die Probleme der Graphschaft Schilda</title>
+		<style>
+			/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+sup {
+   vertical-align: super;
+   font-size: smaller;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+/* Generic styles */
+body {
+  background: #f5f5f5;
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+ul, ol,
+p,
+code, pre,
+hr {
+	line-height: 1.5em;
+	margin: 2em 0 1em 0;
+}
+
+*:first-child {
+	margin-top: 0;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 3.5em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.5em
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+/* Lists */
+ul, ol {
+	padding-left: 2em;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+/* Code and pre */
+code, pre {
+	font-family: "Bitstream Vera Sans Mono", "Courier", monospace;
+}
+code {
+	background: none repeat scroll 0 0 #F8F8FF;
+  border: 1px solid #DEDEDE;
+  border-radius: 3px 	;
+  padding: 0 0.2em;
+}
+pre {
+	border-left: 5px solid #eee;
+	margin-left: 2em;
+	padding-left: 1em;
+}
+pre > code {
+	background: transparent;
+	border: none;
+	padding: 0;
+}
+
+/* Links */
+a {
+  color: #261A3B;
+}
+
+a:visited {
+  color: #261A3B;
+}
+
+/* Inlines */
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+/* Container */
+.container {
+	background: #FFF;
+	padding: 30px 50px;
+	margin: 0 auto;
+	width: 850px;
+}
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+table {
+    width:100%;
+    border-collapse:collapse;
+    border:solid #dddddd;
+    border-width:1px 1px 2px 1px;
+    margin:1em 0;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -moz-background-clip:padding;
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box
+}
+
+table th,
+table td {
+    border:solid #dddddd;border-width:1px;padding:10px;vertical-align:top}
+
+table th>*:first-child,
+table td>*:first-child {
+    margin-top:0}
+
+table th>*:first-child,
+table td>*:first-child {
+    margin-bottom:0}
+
+table th {font-weight:bold;color:#325d72;background-color:#eee}
+
+            img{
+                max-width: 100%;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<p><strong>Jovan Gerodetti - AINF 2014 - ALGODAT - Die Probleme der Graphschaft Schilda</strong></p>
+<h2 id="die-probleme-der-graphschaft-schilda">Die Probleme der Graphschaft Schilda</h2>
+<h3 id="1-stra-en-m-ssen-her-">1) Straßen müssen her!</h3>
+<h4 id="graph">Graph</h4>
+<p><img src="schilda_graph1.jpeg" alt="graph"></p>
+<h4 id="kruskal">Kruskal</h4>
+<h5 id="schritt-1">Schritt 1</h5>
+<p><img src="schilda_graph1_1.jpeg" alt="graph"></p>
+<h5 id="schritt-2">Schritt 2</h5>
+<p><img src="schilda_graph1_2.jpeg" alt="graph"></p>
+<h5 id="schritt-3">Schritt 3</h5>
+<p><img src="schilda_graph1_3.jpeg" alt="graph"></p>
+<h5 id="schritt-4">Schritt 4</h5>
+<p><img src="schilda_graph1_4.jpeg" alt="graph"></p>
+<h5 id="schritt-5">Schritt 5</h5>
+<p><img src="schilda_graph1_5.jpeg" alt="graph"></p>
+<h5 id="schritt-6">Schritt 6</h5>
+<p><img src="schilda_graph1_6.jpeg" alt="graph"></p>
+<h5 id="schritt-7">Schritt 7</h5>
+<p><img src="schilda_graph1_7.jpeg" alt="graph"></p>
+<h5 id="schritt-8">Schritt 8</h5>
+<p><img src="schilda_graph1_8.jpeg" alt="graph"></p>
+<h5 id="ergebniss">Ergebniss</h5>
+<p><img src="schilda_final.jpeg" alt="graph"></p>
+<h3 id="2-wasserversorgung">2) Wasserversorgung</h3>
+<h4 id="ford-fulkerson">Ford-Fulkerson</h4>
+<h5 id="schritt-1">Schritt 1</h5>
+<p><img src="schilda_wasser_1.jpeg" alt="graph"></p>
+<h5 id="schritt-2">Schritt 2</h5>
+<p><img src="schilda_wasser_2.jpeg" alt="graph"></p>
+<h5 id="schritt-3">Schritt 3</h5>
+<p><img src="schilda_wasser_3.jpeg" alt="graph"></p>
+<h5 id="schritt-4">Schritt 4</h5>
+<p><img src="schilda_wasser_4.jpeg" alt="graph"></p>
+<h5 id="schritt-5">Schritt 5</h5>
+<p><img src="schilda_wasser_5.jpeg" alt="graph"></p>
+<h5 id="schritt-6">Schritt 6</h5>
+<p><img src="schilda_wasser_6.jpeg" alt="graph"></p>
+<h5 id="ergebniss">Ergebniss</h5>
+<p><img src="schilda_wasser_final.jpeg" alt="graph"><br>Ja der Supermarkt kann mit den benötigten 22m^2 Wasser versorgt werden.</p>
+<h3 id="1-historische-funde">1) Historische Funde</h3>
+<h4 id="graph">Graph</h4>
+<p><img src="firework.jpeg" alt="graph"> </p>
+<h4 id="breitensuche">Breitensuche</h4>
+<h5 id="schritt-1">Schritt 1</h5>
+<p><img src="firework_1.jpeg" alt="graph"> </p>
+<h5 id="schritt-2">Schritt 2</h5>
+<p><img src="firework_2.jpeg" alt="graph"> </p>
+<h5 id="schritt-3">Schritt 3</h5>
+<p><img src="firework_3.jpeg" alt="graph"> </p>
+<h5 id="schritt-4">Schritt 4</h5>
+<p><img src="firework_4.jpeg" alt="graph"> </p>
+<h5 id="schritt-5">Schritt 5</h5>
+<p><img src="firework_5.jpeg" alt="graph"> </p>
+<h5 id="schritt-6">Schritt 6</h5>
+<p><img src="firework_6.jpeg" alt="graph"> </p>
+<h5 id="schritt-7">Schritt 7</h5>
+<p><img src="firework_7.jpeg" alt="graph"> </p>
+<h5 id="schritt-8">Schritt 8</h5>
+<p><img src="firework_8.jpeg" alt="graph"> </p>
+<h5 id="schritt-9">Schritt 9</h5>
+<p><img src="firework_9.jpeg" alt="graph"> </p>
+<h5 id="schritt-10">Schritt 10</h5>
+<p><img src="firework_10.jpeg" alt="graph"> </p>
+<h5 id="ergebniss">Ergebniss</h5>
+<p><img src="firework_final.jpeg" alt="graph"></p>
+<p>Reihenfolge:<br>1) A<br>2) C<br>3) B, E<br>4) H<br>5) D<br>6) F<br>7) G</p>
+<h3 id="4-wohin-nur-mit-den-ga-sten-">4) Wohin nur mit den Gästen?</h3>
+<h4 id="graph">Graph</h4>
+<p><img src="shilda_street.jpeg" alt="graph"></p>
+<h4 id="ford-fulkerson">Ford-Fulkerson</h4>
+<h5 id="schritt-1">Schritt 1</h5>
+<p><img src="shilda_street_1.jpeg" alt="graph"></p>
+<h5 id="schritt-2">Schritt 2</h5>
+<p><img src="shilda_street_2.jpeg" alt="graph"></p>
+<h5 id="ergebniss">Ergebniss</h5>
+<p><img src="shilda_street_final.jpeg" alt="graph"></p>
+<h3 id="5-es-gibt-viel-zu-tun-">5) Es gibt viel zu tun!</h3>
+<h4 id="graph">Graph</h4>
+<p><img src="jobs.jpeg" alt="graph"></p>
+<h5 id="schritt-1">Schritt 1</h5>
+<p><img src="jobs_1.jpeg" alt="graph"></p>
+<h5 id="schritt-2">Schritt 2</h5>
+<p><img src="jobs_2.jpeg" alt="graph"></p>
+<h5 id="schritt-3">Schritt 3</h5>
+<p><img src="jobs_3.jpeg" alt="graph"></p>
+<h5 id="schritt-4">Schritt 4</h5>
+<p><img src="jobs_4.jpeg" alt="graph"></p>
+<h5 id="schritt-5">Schritt 5</h5>
+<p><img src="jobs_5.jpeg" alt="graph"></p>
+<h5 id="schritt-6">Schritt 6</h5>
+<p><img src="jobs_6.jpeg" alt="graph"></p>
+<h5 id="schritt-7">Schritt 7</h5>
+<p><img src="jobs_7.jpeg" alt="graph"></p>
+<h5 id="ergebniss">Ergebniss</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Projekt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Herr Maier</td>
+<td>Archäologie</td>
+</tr>
+<tr>
+<td>Frau Müller</td>
+<td>Modeberatung</td>
+</tr>
+<tr>
+<td>Frau Augst</td>
+<td>Wasserversorgung</td>
+</tr>
+<tr>
+<td>Frau Schmidt</td>
+<td>Verkehrsplanung</td>
+</tr>
+<tr>
+<td>Herr Kunze</td>
+<td>Eventplanung</td>
+</tr>
+<tr>
+<td>Herr Hof</td>
+<td>Straßenbau</td>
+</tr>
+<tr>
+<td>Frau Lustig</td>
+<td>Wettkampfplanung</td>
+</tr>
+</tbody>
+</table>
+
+		</div>
+
+		<script></script>
+	</body>
+</html>

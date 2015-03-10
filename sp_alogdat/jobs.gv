@@ -1,0 +1,18 @@
+digraph test{
+    Maier -> Straßenbau [color=red];
+    Maier -> Verkehrsplanung [color=red];
+    Maier -> Archäologie [color=blue, style=bold];
+    Mueller -> Modeberatung [color=blue, style=bold];
+    Mueller -> Eventplanung [color=red];
+    Augst -> Straßenbau [color=red];
+    Augst -> Wasserversorgung [color=blue, style=bold];
+    Schmidt -> Straßenbau [color=red];
+    Schmidt -> Verkehrsplanung [color=blue, style=bold];
+    Schmidt -> Wettkampfplanung [color=red];
+    Kunze -> Archäologie [color=red];
+    Kunze -> Eventplanung [color=blue, style=bold];
+    Hof -> Straßenbau [color=blue, style=bold];
+    Hof -> Modeberatung [color=red];
+    Lustig -> Verkehrsplanung [color=red];
+    Lustig -> Wettkampfplanung [color=blue, style=bold];
+}

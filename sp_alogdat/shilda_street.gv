@@ -1,0 +1,14 @@
+digraph{
+    B; D;
+    A; S;
+    C; E;
+    A -> B [label="12/16"];
+    A -> C [label="4/13"];
+    C -> B [label="4"];
+    B -> D [label="12/12"];
+    C -> E [label="4/14"];
+    D -> C [label="9"];
+    D -> E [label="7"];
+    D -> S [label="12/20"];
+    E -> S [label="4/4"];
+}

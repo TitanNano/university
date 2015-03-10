@@ -1,0 +1,19 @@
+graph test{
+    M -- H [weight=9, label="9"];
+    M -- Br [weight=9.5, label="9.5"];
+    M -- P [weight=7.5, label="7.5"];
+    M -- W [weight=4, label="4"];
+    M -- Be [weight=3, label="3"];
+    M -- R [weight=6, label="6"];
+    Br -- P [weight=11, label="11"];
+    H -- Br [weight=4, label="4"];
+    H -- Bue [weight=5, label="5"];
+    P -- Bue [weight=3, label="3"];
+    P -- L [weight=4, label="4"];
+    Be -- L [weight=4, label="4"];
+    Be -- R [weight=6, label="6"];
+    Be -- W [weight=6, label="6"];
+    L -- M [weight=6, label="6"];
+    W -- R [weight=7, label="7"];
+    W -- Br [weight=7, label="7"];
+}

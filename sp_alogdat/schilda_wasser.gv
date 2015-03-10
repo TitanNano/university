@@ -1,0 +1,14 @@
+digraph test{
+    W -> D [weight=7,  label="7/7"];
+    W -> I [weight=5,  label="5/5"];
+    W -> C [weight=10, label="6/10"];
+    D -> A [weight=7,  label="7/7"];
+    D -> B [weight=4,  label="4/4"];
+    I -> B [weight=4,  label="4/4"];
+    I -> H [weight=1,  label="1/1"];
+    C -> A [weight=5,  label="1/5"];
+    C -> H [weight=5,  label="5/5"];
+    A -> S [weight=8,  label="8/8"];
+    B -> S [weight=10, label="8/10"];
+    H -> S [weight=7,  label="6/7"];
+}
