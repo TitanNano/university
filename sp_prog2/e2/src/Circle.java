@@ -1,5 +1,5 @@
 
-public class Circle{
+public class Circle extends GeometricalType{
 	private Point center;
 	private int radius = 1;
 
@@ -30,5 +30,9 @@ public class Circle{
 		}else{
 			return false;
 		}
+	}
+
+	@Override public String toString(){
+		return "x = "+center.getX()+", y = "+center.getY()+", radius = "+radius;
 	}
 }

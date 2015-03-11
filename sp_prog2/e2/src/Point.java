@@ -1,5 +1,5 @@
 
-public class Point {
+public class Point extends GeometricalType{
 	private int x = 0;
 	private int y = 0;
 
@@ -23,5 +23,9 @@ public class Point {
 			return false;
 		}
 	}
-}
 
+	@Override
+	public String toString(){
+		return "("+x+"|"+y+")";
+	}
+}

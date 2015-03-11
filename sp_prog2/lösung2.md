@@ -62,3 +62,29 @@ In einer /clr- Kompilierung hat der Destruktor eine besondere Rolle bei der Frei
 
 ##Programmierpraxis
 ###1) Inhaltlicher Vergleich mit equals
+siehe e2 ordner
+
+###2) Implementieren Sie eine Klasse "GeometricalType". Erstellen Sie die Klasse als abstrakte Klasse, denn Instanzen von GeometricalType wird es nicht geben, nur konkrete Punkte und Kreise.
+siehe e2 ordner
+
+### 4) Führen Sie noch eine weitere Klasse ein: Rechteck
+siehe e2 ordner
+
+### 3) Portieren Sie das Beispiel nach C#.
+siehe e3 ordner
+
+##Experimente mit Strings
+####Zeigen Sie in einem Beispiel ob sich Strings in C# oder in Java mit == auf inhaltliche Gleichheit prüfen lassen. Wenn dies in einer Sprache nicht der Fall ist, was muss dann getan werden, um Strings inhaltlich zu vergleichen?
+Ja die operatoren sind werte vergleichend. Da es sich bei Java Strings jedoch um Objekte handelt können die Strings nicht verglichen werden, da der Operator lediglich die speicher referenzen auf die jeweiligen String Objekte vergleicht.
+
+##Experimente mit Arrays
+Arrays können mit der Objektmethode clone() kopiert werden.
+
+###1) Was passiert bei Referenztypen?
+Das Array wird kopiert, jedoch zeigen die neuen Zeiger auf die selben Speicherstellen wie die ursprünglichen.
+
+###2) Vergleichen Sie nun die Arrays mit euqals(). Frage: Ist die korrekte Arbeitsweise abhängig davon, ob Sie in der Point Klasse die Methode equals() überschrieben haben (siehe Aufgabe oben)?
+Nein es spielt absoult keine rolle. Dazu ist anzumerken das die equals methode für Arrays nicht implementiert wurde und direkt von der Object Klasse vererbt wurde. Möchte man zwei Arrays auf inhaltliche gleichheit überprüfen so sollte man die methode Array.equals(array1, array2) verwenden.
+
+###3) Gegeben sein ein zweidimensionales (unregelmäßiges) Array. Die erste Dimension steht für die Layer im Zeichenprogramm. Jeder Layer kann verschiedene geometrische Objekte beinhalten. Lässt sich ein solches mehrdimensionales Array klonen? Handelt es sich bei der Kopie um eine "echte" Kopie (siehe oben)?
+Das hängt von der klon Funktion ab. die standart klon function von arrays `array.clone()` wird lediglich eine kopie des obersten arrays erzeugen. Die kopie ver weist dann auf die selben sub arrays wie das Original. Möchte man eine "echte" Kopie so muss eine deep-copy Funktion geschrieben werden.
